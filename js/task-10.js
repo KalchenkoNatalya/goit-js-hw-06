@@ -38,7 +38,6 @@ const btnCreate = document.querySelector("[data-create]");
 const btnDestroy = document.querySelector("[data-destroy]");
 const boxes = document.querySelector("#boxes");
 
-
 btnCreate.addEventListener("click", onCreate);
 
 function onCreate() {
@@ -51,10 +50,10 @@ function onCreate() {
 function createBoxes(amount) {
   for (let i = 1; i <= amount; i += 1) {
     const divCreate = document.createElement("div");
-    divCreate.textContent = "це div";
-    divCreate.style.width = 30 + (10 * i)+'px';
-    divCreate.style.height = 30 + (10 * i)+'px';
-    divCreate.style.backgroundColor = getRandomHexColor()
+    // divCreate.textContent = "це div";
+    divCreate.style.width = 30 + 10 * i + "px";
+    divCreate.style.height = 30 + 10 * i + "px";
+    divCreate.style.backgroundColor = getRandomHexColor();
 
     boxes.append(divCreate);
   }

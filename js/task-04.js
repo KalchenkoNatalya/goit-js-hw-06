@@ -24,33 +24,11 @@ const counter = {
 };
 
 btnIncrement.addEventListener("click", () => {
-  // console.log("click+1");
   counter.increment();
   value.textContent = counter.counterValue;
 });
 
 btnDecrement.addEventListener("click", () => {
-  // console.log("click-1");
   counter.decrement();
   value.textContent = counter.counterValue;
 });
-
-// let counterValue = 0;
-// function increment() {
-//   counterValue += 1;
-// }
-// function decrement() {
-//   counterValue -= 1;
-// }
-
-// btnIncrement.addEventListener("click", () => {
-//   console.log("click+1");
-//   increment();
-//   value.textContent = counterValue;
-// });
-
-// btnDecrement.addEventListener("click", () => {
-//   console.log("click-1");
-//   decrement();
-//   value.textContent = counterValue;
-// });

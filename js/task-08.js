@@ -21,17 +21,13 @@ function handleFormSubmit(event) {
 
   if (!mail || !password) {
     alert("Всі поля повинні бути заповнені");
-  }
-   else {
+  } else {
     const formData = {
       mail,
-    password,
+      password,
     };
     console.log(formData);
   }
 
   formSubmit.reset();
-
- 
 }
-
